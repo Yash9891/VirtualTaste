@@ -1,322 +1,2141 @@
 *{
     margin: 0;
-    padding: 0;
+    font-family: Arial;
+    border:border-box;
 }
-body{
-   background-color: rgb(245, 246, 235);
-}
-html{
-   scroll-behavior: smooth;
-}
-/* Navigation bar */
-#navbar{
-    display: flex;
-    align-items: center;
-    background-color: rgb(244, 180, 76);
-}
-
-/* Navigation bar :Logo and image */
-#logo{
-    margin: 10px 15px;
-
-}
-#logo img{
-   
-    height: 60px;
-    border-radius: 50%;
-}
-
-/* Navigation bar :List styling */
-#navbar ul{
-    display: flex;
-}
-#navbar ul li {
-    list-style: none;
-   font-size: 20px;
-}
-#navbar ul li a{
-   display: block;
-   padding: 3px 25px;
-   border-radius: 15px;
-   color: white;
-   text-decoration: none;
-   font-weight: 700;
-}
-#navbar ul li a:hover{
-   color: rgb(245, 175, 63);
-   background-color: rgb(255, 255, 255);
-
- }
-
-
- /* Home section */
- #home{
-    display: flex;
-    flex-direction: column;
-    padding: 0px 200px;
-    height: 450px;
-
-    justify-content: center;
-    align-items:center;
-    
- }
- #home::before{
-    content:"";
-    position: absolute;
-    background: url("b1.jpg") no-repeat center center/cover;
-    height: 550px;
-    width: 100%;
-    z-index:-1;
-    opacity:0.89;
-   
- }
-#home h1{
-    color: white;
-    text-align: center;
-    font-weight: bolder;
-    font-family: 'Merriweather', serif;
-
-}
-#home p{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 1100;
-    font-family: 'Lobster', cursive;
-
-}
- .h-primary{
-    font-size: 3rem;
-    padding: 12px;
-    font-family: 'Lobster', cursive;
-    padding-top: 70px;
-    color: rgb(0, 0, 0);
-  
-  
- }
- .btn{
-    padding: 6px 20px;
-    border: 2px solid rgb(106, 14, 14);
-    border-color: rgb(232, 144, 13);
-    font-size: 1.5rem;
-    color: beige;
-    font-weight: 700;
-    background-color: rgb(229, 138, 26);
-    border-radius: 10px;
-    margin-top: 20px ;
-    cursor: pointer;
-   
- }
-/* service */
-
-#services{
-    margin: 24px;
-    display: flex;
-  
-}
-#services .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   align-items: center;
-    border: 2px solid rgb(255, 208, 157);
-    padding: 30px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: rgb(252, 252, 218);
-
-}
-#services .box img{
-    
-    width: 80%;
-}
-#services .box p{
-    font-family: 'Lobster', cursive;
-}
-
-
- .h-secondary{
-    font-size:2rem;
-    padding: 12px;
-    font-family: 'Lobster', cursive;
- }
- .btn:hover{
-background-color: aliceblue;
-color: rgb(225, 150, 45);
-border: 3px solid;
-
- }
- .center{
-    text-align: center;
- }
-
-
- /* client section */
- #client-section{
-    
-    height: 300px;
-
- }
- #client-section::before{
-    content: "";
-    position: absolute;
-    background: url("pp.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 300px;
-    z-index: -1;
-    opacity: 0.6;
-    
-
- }
- #clients{
+.flex{
     display: flex;
     justify-content: center;
     align-items: center;
- }
- #clients img{
-    height: 100px;
+}
+.navbar{
+    height:60px;
     background-color: rgb(0, 0, 0);
-    padding: 2px 2px;
-    border-radius: 8px;
- }
- .client-item{
-    padding: 35px;
- }
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
- /* contact section */
- #contact{
-    position: relative;
-
- }
- #contact::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.6;
-    background:url("ol.jpg") no-repeat center center/cover ;
+}
+.nav-logo{
+    height:50px;
+    width: 170px;
     
- }
- #contact-box{
+}
+.logo{
+    cursor: pointer;
+    background-image: url("images/logo2.png");
+    height:50px;
+    width:180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:2px solid white;
+}
+.search{
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(234, 149, 87);
+    width: 600px;
+    height: 40px;
+    border-radius: 4px;
+}
+.search-input{
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    width: 100%;
+    font-size:1.2rem;
+    border: 0;
+}
+.search-icon{
+    cursor:pointer;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.list{
+    display: flex;
+    width: 500px; 
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+.list li a{
+    text-decoration: none;
+    padding: 0 8px;
+    color: aliceblue;
+    font-weight: 500;
+}
+.list li a:hover{
+    font-weight: 600;
+    font: 1.4rem;
+    color: rgb(238, 157, 34);
+}
+.order{
+    height: 40px;
+    width: 100px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.order:hover{
+    font-weight: 700;
+    color: rgb(214, 125, 9);
+}
+.signup{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    width: 100px;
+    padding: 9px 5px;
+    border: 2px solid orange;
+    border-radius: 4px;
+    margin-right: 15px;
+    
+}
+.signup:hover{
+    color: rgb(238, 142, 46);
+    border: 2px solid white;
+}
+
+/* hero section ***********************/
+
+.herosection{
+    background-image: url("images/Contact.png");
+    background-size: cover;
+    height: 600px;
+   
+}
+.taste{
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    
+}
+
+.herosection h1{
+    color: white;
+    font-size: 6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.herosection h2{
+    color: orange;
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.heromessage{
+    background-color: rgb(26, 25, 25);
+    color: white;
+    height: 50px;
+    display: flex;
+  
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.heromessage p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*location.....................*/
+.section2{
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+    display: flex;
+    height: 50px;
+    justify-content: center; 
+    background-color: rgb(234, 241, 241);
+    
+}
+.section2 h1{
+    color: rgb(71, 68, 72);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.location{
+    height: 510px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(234, 241, 241);
+  
+}
+.box{
+    margin-top: 10px;
+    height: 420px;
+    width: 22%;
+    background-color: white;
+    padding: 10px 0px 15px;
+    margin: 20px;
+    border-radius: 4px; 
+}
+.box:hover{
+    height: 430px;
+    width: 24%;
+    transition: all 0.4s ease;
+    
+}
+.box-content{
+    margin: 0 10px;
+}
+.box-img{
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.booknow{
+    height: 35px;
+    width: 100px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: 800;
+    color: white;
+    background-color: black;
+    border-color: black;
+
+
+}
+.booknow:hover{
+    font-weight: 700;
+    color: rgb(47, 47, 62);
+    border-color: rgb(224, 134, 15);
+    background-color: rgb(224, 151, 62);
+    transition: all 0.4s ease;
+}
+
+
+/*footer-----------------*/
+.foot-panel1{
+    height: 50px;
+    background: rgb(47, 47, 62);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom:30px ;
-
- }
- #contact-box input, #contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 10px;
- }
- #contact-box form{
-    width: 50%;
-    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.3rem;
     font-weight: 700;
-
-
- }
- .form-group input, .form-group textarea{
-   background-color: rgb(252, 250, 211);
-   border-color: rgb(252, 186, 86);
-   border-width: 3px;
-
- }
- .form-group label{
-font-size: 20px;
-   color: rgb(0, 0, 0);
- }
-
- footer{
-    background-color: black;
-    color: aliceblue;
-    padding: 10px 20px;
- }
-
- @media(max-width:1023px){
-   #navbar{
-      flex-direction: column;
-   }
-   #navbar ul li a{
-      font-size:1rem ;
-      padding: 0px 7px;
-      padding-bottom:8px ;
-   }
-   #home{
-      height: 250px;
-      padding: 0 40px;
-
-   }
-   #home p{
-      font-size: 17px;
-
-   }
-   #home:before{
-      height: 250px;
-
-   }
-   #services{
-flex-direction: column;
-
-   }
-
-   #clients{
-      flex-wrap:wrap;
-   
-   }
-   .client-item{
-      padding: 0 20px;
-   }
-   #clients img{
-      width: 100%;
-      height: 60px;
-      padding: 5px;
-   }
-   #contact-box form{
-width: 80%;
-   }
-   .btn{
-font-size: 16px;
-padding: 3px 7px;
-   }
-.h-primary{
-   font-size: 26px;
+    
 }
- }
- @media(max-width:563px){
-   #home{
-     
-      padding: 0 20px;
-
-   }
-   #home p{
-      font-size: 15px;
-
-   }
-   #home h1{
-      font-size: 30px;
-padding-top: 50px;
-   }
- }
- @media(max-width:330px){
-   #services{
-      margin: 5px 2px;
-   }
-   #home{
-      height: 310px;
-   }
-   #home::before{
-      height: 310px;
-   }
-   #navbar ul .item a{
-      font-size: 0.7rem;
-   }
-   #clients img{
-      width: 100%;
-      height: 50px;
-      padding: 4px;
-   }
-  
+.foot-panel1 a{
+    text-decoration: none;
+    padding: 0 8px;
+    color: aliceblue;
+    font-weight: 500;
+}
+.foot-panel2{
+    background-color: rgb(15, 17, 23);
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.foot-panel2 ul h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.foot-panel2 ul i{
+    padding: 10px;
  
- }
+}
+.foot-panel2 ul a{
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 7px;
+}
+.foot-panel3{
+    border-top:1px solid white;
+    background-color: rgb(6, 6, 13);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-logo{
+    background-image: url("images/logo2.png");
+    height:50px;
+    width:220px;
+    background-size: cover;
+    padding:10px;
+  
+}
+.foot-panel4{
+    height: 20px;
+    padding: 10px;
+    background-color:rgb(41, 48, 68);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.pages a{
+    padding: 0 10px;
+}
+.copy{
+    margin-top:5px ;
+}
+
+
+/* welcome card----------------*/
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(35, 35, 37);
+
+}
+.welcome-image img{
+    height: 400px;
+    width: 700px;
+    border-radius: 2px;
+    margin: 15px;
+    margin-right: 20px;
+    border: 4px solid white;
+}
+.welcome-image img:hover{
+    height: 410px;
+    width: 710px;
+    transition: all 0.3s ease;
+    border: 4px solid white;
+}
+
+.wecome-card{
+
+    color: rgb(215, 151, 61);
+    margin-left: 15px;
+    padding: 20px;
+    background-color: black;
+    height: 380px;
+    width: 50%;
+    border-radius: 5px;
+
+    font-size: 2rem;
+}
+.wecome-card:hover{
+    background-color: rgb(35, 35, 37);
+    transition: all 0.3s ease;
+
+
+}
+.wecome-card p{
+    font-size: 1.6rem;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 600;
+    margin: 10px;
+
+}
+.wecome-card h2{
+    font-size: 2rem;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+.wecome-card h3{
+    color: rgb(237, 237, 237);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 1.6rem;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 720px;
+    background-color: rgb(14, 21, 51);
+
+}
+.menuimg img{
+    height: 650px;
+    width: 500px;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+.menuimg img:hover{
+    height: 665px;
+    width: 515px;
+    border: 6px solid white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.menu-heading{
+    font-size: 1.6rem;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(42, 42, 77);
+}
+.menu-heading i{
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+
+/*Slider------------------*/
+/* Slideshow container */
+.slider-heading{
+    font-family: cursive;
+    height: 50px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    
+}
+.slider-heading h2{
+    color: rgb(236, 145, 9);
+    font-weight: 800;
+    font-size: 2.7rem;
+
+}
+
+.slideshow-container {
+    border-radius: 3px;
+    
+
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Add overflow hidden to hide overflowing content */
+  }
+  
+  /* Caption text */
+  .text {
+    color: black;
+    font-size: 1.2rem;
+    padding: 2px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    font-family: cursive;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1.8s ease;
+  }
+  
+  .active {
+    background-color:black;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out-in; /* Use ease-in-out for smoother transition */
+  }
+  
+  @keyframes fade {
+    0% {opacity: 0; transform: translateX(100%);} /* Start from right */
+    100% {opacity: 1; transform: translateX(0);} /* End at center */
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  .slider{
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+  .mySlides img{
+    height: 380px;
+    width: 310px;
+    padding: 10px 15px;
+    padding-right: 15px;
+    
+    
+
+
+  }
+  .slider-images{
+
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    background-color: rgb(230, 222, 222);
+
+  }
+  .slider-images .discount {
+    width: 980px;
+  }
+
+
+/* conatct container-------------------- */
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: url("images/pxfuel.jpg");
+    background-repeat: no-repeat;
+    background: cover;
+    
+}
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 580px;
+    width:80%;
+    background-color: white;
+    border-radius: 2rem;
+}
+.get{
+   
+    display: flex;
+    flex-direction: column;
+    height:500px ;
+    width: 50%;
+    margin: 10px;
+    margin-left: 15px;
+}
+.i1{
+     
+    display: flex;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+}
+.i1 h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 10px;
+    font-size: 1rem;
+
+}
+.contact{
+    height:500px ;
+    margin: 10px;
+    width: 50%;
+    margin-right: 15px;
+}
+.get h1{
+    color: rgb(7, 157, 233);
+    font-weight: 800;
+    padding: 20px;
+    font-size: 3.5rem;
+}
+.get p{
+    font-weight: 600;
+    color: rgb(85, 76, 182);
+    
+    font-family: cursive;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+.get i{
+    padding-right: 10px;
+    color: rgb(7, 165, 244);
+}
+.contact h1{
+    color:orange;
+    font-weight: 800;
+    padding: 20px;
+    font-size: 3.5rem;
+
+}
+.input1{
+    padding: 15px;
+}
+.input1 input{
+    margin: 10px;
+    border-radius: 2rem;
+    padding: 20px 15px;
+    font-size: 1rem;
+    border: none;
+    
+    background-color: rgb(229, 234, 234);
+}
+.input1 textarea{
+
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    height: 150px;
+    width: 80%;
+    background-color: rgb(229, 234, 234);
+}
+
+
+/* About us---------------------------- */
+.about{
+    height:1500px ;
+    background-color: #252527;
+}
+.about1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutimg img{
+    height: 400px;
+    width: 420px;
+}
+.aboutimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+.aboutp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    color: rgb(12, 198, 142);
+    font-weight: 800;
+    padding: 25px;
+    font-size: 1.8rem;
+    height: 400px;    
+}
+.about p{
+    font-family: 'Autour One', cursive;
+    color: rgb(158, 142, 236);
+}
+.about1{
+
+    height: 450px;
+}
+.about-heading{
+    height: 70px;
+    color: white;
+    font-weight: 800;
+    padding: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 35px;
+}
+.aboutp h1{
+    font-family: 'Young Serif', serif;;
+    height: 70px;
+    color: orange;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+
+/* menu-html */
+.sectionfood{
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+    display: flex;
+    height: 50px;
+    justify-content: center; 
+    background-color: rgb(234, 241, 241);
+    
+}
+.sectionfood h1{
+    color: rgb(71, 68, 72);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.foodi{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 241, 241);
+  
+}
+.divfood1{
+    height: 510px;
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: rgb(234, 241, 241);
+  
+}
+.divfood2{
+    height: 510px;
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: rgb(234, 241, 241);
+  
+}
+.food{
+    margin-top: 10px;
+    height: 420px;
+    width: 22%;
+    background-color: white;
+    padding: 10px 0px 15px;
+    margin: 20px;
+    border-radius: 4px; 
+}
+.food:hover{
+    height: 430px;
+    width: 24%;
+    transition: all 0.4s ease;
+    
+}
+.food-content{
+    margin: 0 10px;
+}
+.food-img{
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+
+/* toogle------------------ */
+/* Add styles for the navigation bar */
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 850px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav-list li a{
+        margin: 0 10px;
+        padding: 5px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    /* Add styles for the active state */
+    .nav-list li a.active {
+        background-color:none;
+       
+        color: white;
+    }
+    .menu-toggle span {
+   
+        width: 30px;
+        height: 4px;
+        background-color: rgb(255, 255, 255);
+        margin: 1.5px 10px;
+    }
+    .nav-list {
+        height: 40px;
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        left: 0;
+        background-color: black;
+        width: 100%;
+        
+        z-index: 1;
+    }
+    .nav-list.active {
+        display: flex;
+        background-color: none;
+    }
+}
+
+/* media----------------------------- */
+
+@media screen and (max-width: 1372px){
+    .navbar{
+        height:50px;
+    }
+    .nav-logo{
+        height:35px;
+        width: 100px;
+        
+    }
+    .logo{
+        height:35px;
+        width:120px;  
+    }
+    .border:hover{
+        border:1px solid white;
+    }
+    .search{
+        margin-left: 30px;
+        width: 450px;
+        height: 35px;
+        border-radius: 4px;
+    }
+    .search-input{
+        width: 100%;
+        font-size:1rem;
+    }
+    .search-icon{
+        width: 35px;
+        font-size: 1rem;
+    }
+    .list{
+        width: 350px; 
+    }
+    .list li a:hover{
+        font: 1.1rem;
+    }
+    .order{
+        height: 35px;
+        width: 80px;
+        font-size: 0.6rem;
+    }
+    .signup{
+        font-size: 14px;
+        width: 80px;
+        
+    }
+
+    /* hero section ***********************/
+    
+    .herosection{
+        height: 500px;
+    }
+    .taste{
+        height: 250px;
+    }
+    
+    .herosection h1{
+        font-size: 5rem;
+    }
+    .herosection h2{
+        font-size: 2rem;
+    }
+    .heromessage{
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    /*location.....................*/
+    .section2{
+        height: 40px;   
+    }
+    .section2 h1{
+        font-size: 2rem;
+    }
+    .location{
+        height: 410px;
+    }
+    .box{
+        height: 350px;
+        width: 20%;
+        margin: 15px;
+    }
+    .box-content h2{
+        font-size: 1.1rem;
+    }
+    .box:hover{
+        height: 360px;
+        width: 22%;
+        
+    }
+    .box-img{
+        height: 280px;
+    }
+    .booknow{
+        height: 30px;
+        width: 80px;
+        font-size: 0.7rem;
+        font-weight: 600; 
+    }
+    /*footer-----------------*/
+    .foot-panel1{
+        height: 40px;
+        font-size: 1.1rem;    
+    }
+    .foot-panel2{
+        height: 200px;
+    }
+    .foot-panel2 ul a{
+        font-size: 0.8rem;
+    }
+    .foot-panel3{
+        height: 50px;
+    }
+    .panel-logo{
+       height:40px;
+        width:150px;
+    }
+    .foot-panel4{
+        height: 15px;
+        font-size: 0.6rem;
+    }
+    /* welcome card----------------*/
+    .welcome{
+        height: 400px;
+    }
+    .welcome-image img{
+        height: 300px;
+        width: 500px;
+    }
+    .welcome-image img:hover{
+        height: 320px;
+        width: 520px;
+    }
+    
+    .wecome-card{
+        height: 280px;
+        width: 50%;
+        font-size: 1.6rem;
+    }
+    .wecome-card p{
+        font-size: 1.3rem;
+    }
+    .wecome-card h2{
+        font-size: 1.7rem;
+    }
+    .wecome-card h3{
+        font-size: 1.4rem;
+    
+    }
+    .menu{
+        height: 610px;
+    }
+    .menuimg img{
+        height: 530px;
+        width: 400px;
+    }
+    .menuimg img:hover{
+        height: 540px;
+        width: 420px;
+    }
+    .menu-heading{
+        font-size: 1.3rem;
+        height: 50px;
+    }
+    .menu-heading i{
+        font-size: 1.4rem;
+    }
+    
+    
+    /*Slider------------------*/
+    /* Slideshow container */
+    .slider-heading{
+        height: 40px;
+    }
+    .slider-heading h2{
+        font-weight: 800;
+        font-size: 2.1rem;
+    
+    }
+    
+      /* Caption text */
+      .text {
+        font-size: 1rem;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        font-size: 8px;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 10px;
+        width: 10px;
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 8px}
+      }
+      .slider{
+        height: 410px; 
+      }
+      .mySlides img{
+        height: 300px;
+        width: 240px;
+      }
+      .slider-images{
+        height: 380px;
+    
+      }
+      .slider-images .discount {
+        width: 800px;
+      }
+    
+    
+    /* conatct container-------------------- */
+    .contact-container{
+        height: 550px;  
+    }
+    .contact-content{
+        height: 480px;
+    }
+    .get{
+        height:400px ;
+    }
+    .i1{
+        font-size: 2rem;
+    }
+    .i1 h3{
+        font-size: 0.8rem;
+    
+    }
+    .contact{
+        height:400px ;
+    }
+    .get h1{
+        font-size: 2.7rem;
+    }
+    .get p{
+        font-size: 1.2rem;
+    }
+    .contact h1{
+        font-size: 2.7rem;
+    
+    }
+
+    .input1 input{
+        border-radius: 2rem;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        border: none;
+        width: 150px;
+    }
+    .input1 textarea{
+        font-size: 1rem;
+        height: 100px;
+        width: 80%;
+    }
+    
+    
+    /* About us---------------------------- */
+    .about{
+        height:1200px ;
+    }
+    .aboutimg img{
+        height: 300px;
+        width: 320px;
+    }
+    .aboutp{
+        height: 300px;    
+    }
+    .about1{
+    
+        height: 350px;
+    }
+    .about-heading{
+        height: 60px;
+        font-size: 2.8rem;
+
+    }
+    .aboutp h1{
+        height: 60px;
+        font-size: 2.9rem;
+    }
+    
+    /* menu-html */
+    .sectionfood{
+        height: 40px; 
+    }
+    .sectionfood h1{
+        font-size: 2rem;
+    }
+
+    .foodi{
+        height: 800px;
+    }
+    .divfood1{
+        height: 410px;
+  
+    }
+    .divfood2{
+        height: 410px;
+    }
+    .food{
+        height: 320px;
+        width: 20%;
+    }
+    .food:hover{
+        height: 330px;
+        width: 22%;
+        
+    }
+    .food-img{
+        height: 270px;
+    }  
+
+}
+
+/* media------------ */
+@media screen and (max-width: 1090px){
+    .navbar{
+        height:40px;
+    }
+    .nav-logo{
+        height:30px;
+        width: 100px;
+        
+    }
+    .logo{
+        height:30px;
+        width:110px;  
+    }
+    .search{
+        width: 350px;
+        height: 30px;
+    }
+    .search-input{
+        width: 100%;
+        font-size:0.8rem;
+    }
+    .search-icon{
+        width: 30px;
+        font-size: 0.9rem;
+    }
+    .list{
+        width: 300px; 
+    }
+    .list li a:hover{
+        font: 1rem;
+    }
+    .list li a{
+        font-size: 0.7rem;
+    }
+    .order{
+        height: 30px;
+        width: 70px;
+        font-size: 0.5rem;
+    }
+    .signup{
+        font-size: 10px;
+        width: 70px;
+        
+    }
+
+    /* hero section ***********************/
+    
+    .herosection{
+        height: 350px;
+    }
+    .taste{
+        height: 250px;
+    }
+    
+    .herosection h1{
+        font-size: 3rem;
+        width: 500px;
+        
+ 
+    }
+    .herosection h2{
+        font-size:1.8rem;
+        width: 500px;
+        
+    }
+    .heromessage{
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    .nav-list {
+        height: 30px;
+        top: 40px; /* Adjust the top position as needed */
+        width: 100%;
+
+    }
+    
+    /*location.....................*/
+    .section2{
+        height: 30px;   
+    }
+    .section2 h1{
+        font-size: 1.5rem;
+    }
+    .location{
+        height: 310px;
+    }
+    .box{
+        height: 240px;
+        width: 20%;
+  
+    }
+    .box-content h2{
+        font-size: 0.9rem;
+    }
+    .box:hover{
+        height: 260px;
+        width: 22%;
+        
+    }
+    .box-img{
+        height: 180px;
+    }
+    .booknow{
+        height: 25px;
+        width: 70px;
+        font-size: 0.6rem;
+        font-weight: 600; 
+    }
+    /*footer-----------------*/
+    .foot-panel1{
+        height: 40px;
+        font-size: 1.1rem;    
+    }
+    .foot-panel2{
+        height: 200px;
+    }
+    .foot-panel2 ul a{
+        font-size: 0.8rem;
+    }
+    .foot-panel3{
+        height: 50px;
+    }
+    .panel-logo{
+       height:40px;
+        width:150px;
+    }
+    .foot-panel4{
+        height: 15px;
+        font-size: 0.6rem;
+    }
+    /* welcome card----------------*/
+    .welcome{
+        height: 350px;
+    }
+    .welcome-image img{
+        height: 260px;
+        width: 350px;
+    }
+    .welcome-image img:hover{
+        height: 270px;
+        width: 360px;
+    }
+    
+    .wecome-card{
+        height: 240px;
+        width: 50%;
+        font-size: 1rem;
+    }
+    .wecome-card p{
+        font-size: 0.8rem;
+    }
+    .wecome-card h2{
+        font-size: 1.1rem;
+    }
+    .wecome-card h3{
+        font-size: 0.9rem;
+    
+    }
+    .menu{
+        height: 510px;
+    }
+    .menuimg img{
+        height: 430px;
+        width: 300px;
+    }
+    .menuimg img:hover{
+        height: 440px;
+        width: 320px;
+    }
+    .menu-heading{
+        font-size: 1rem;
+        height: 40px;
+    }
+    .menu-heading i{
+        font-size: 1.4rem;
+    }
+    
+    
+    /*Slider------------------*/
+    /* Slideshow container */
+    .slider-heading{
+        height: 40px;
+    }
+    .slider-heading h2{
+
+        font-size: 1.6rem;
+    
+    }
+    
+      /* Caption text */
+      .text {
+        font-size: 1rem;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        font-size: 8px;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 10px;
+        width: 10px;
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 8px}
+      }
+      .slider{
+        height: 300px; 
+      }
+      .mySlides img{
+        height: 200px;
+        width: 160px;
+      }
+      .slider-images{
+        height: 280px;
+    
+      }
+      .slider-images .discount {
+        width: 600px;
+      }
+    
+    
+    /* conatct container-------------------- */
+    .contact-container{
+        height: 450px;  
+    }
+    .contact-content{
+        height: 420px;
+    }
+    .get{
+        height:300px ;
+    }
+    .i1{
+        font-size: 1.3rem;
+    }
+    .i1 h3{
+        font-size: 0.7rem;
+        padding: 5px 0;
+    
+    }
+    .contact{
+        height:300px ;
+    }
+    .get h1{
+        font-size: 2rem;
+    }
+    .get p{
+        font-size: 1rem;
+    }
+    .contact h1{
+        font-size: 2rem;
+    
+    }
+
+    .input1 input{
+        font-size: 0.8rem;
+        padding: 10px;
+        width: 70px;
+    }
+    .input1 textarea{
+        font-size: 1rem;
+        height: 60px;
+        width: 80%;
+    }
+    
+    
+    /* About us---------------------------- */
+    .about{
+        height:1050px ;
+    }
+    .aboutimg img{
+        height: 250px;
+        width: 270px;
+    }
+    .aboutp{
+        height: 200px;    
+    }
+    .aboutp p{
+        font-size: 1.3rem;   
+    }
+    .about1{
+    
+        height: 300px;
+    }
+    .about-heading{
+        height: 50px;
+        font-size: 2.3rem;
+
+    }
+    .aboutp h1{
+        height: 50px;
+        font-size: 2.4rem;
+    }
+    
+    /* menu-html */
+    .sectionfood{
+        height: 30px; 
+    }
+    .sectionfood h1{
+        font-size: 1.5rem;
+    }
+
+    .foodi{
+        height: 700px;
+    }
+    .divfood1{
+        height: 310px;
+  
+    }
+    .divfood2{
+        height: 310px;
+    }
+    .food{
+        height: 220px;
+        width: 20%;
+    }
+    .food:hover{
+        height: 230px;
+        width: 22%;
+        
+    }
+    .food-img{
+        height: 170px;
+    } 
+    .oo{
+        font-size: 1rem;
+    } 
+
+}
+
+
+/* media------------------------- */
+@media screen and (max-width: 700px){
+    
+    .navbar{
+        height:40px;
+    }
+    .nav-logo{
+        height:28px;
+        width: 80px;
+        
+    }
+    .logo{
+        height:28px;
+        width:90px;  
+    }
+    .search{
+        width: 250px;
+        height: 25px;
+    }
+    .search-input{
+        width: 100%;
+        font-size:0.7rem;
+    }
+    .search-icon{
+        width: 25px;
+        font-size: 0.7rem;
+    }
+    .list{
+        width: 90%; 
+    }
+    .list li a:hover{
+        font: 1rem;
+    }
+    .list li a{
+        font-size: 0.7rem;
+    }
+    .order{
+        height: 25px;
+        width: 70px;
+        font-size: 0.5rem;
+    }
+    .signup{
+        
+        font-size: 8px;
+        width: 50px;
+        
+    }
+
+    /* hero section ***********************/
+    
+    .herosection{
+        height: 250px;
+
+    }
+    .taste{
+        height: 150px;
+        width: 100px;
+    }
+    
+    .herosection h1{
+        font-size: 2rem;
+        width: 220px;
+
+    }
+    .herosection h2{
+        font-size:1rem;
+        
+        width: 200px;
+        
+    }
+    .heromessage{
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    .nav-list {
+        height: 30px;
+        top: 40px; /* Adjust the top position as needed */
+        width: 100%;
+
+    }
+    
+    /*location.....................*/
+    .section2{
+        height: 25px;   
+    }
+    .section2 h1{
+        font-size: 1.3rem;
+    }
+    .location{
+        height: 200px;
+    }
+    .box{
+        height: 150px;
+        width: 20%;
+  
+    }
+    .box-content h2{
+        font-size: 0.7rem;
+    }
+    .box:hover{
+        height: 155px;
+        width: 22%;
+        
+    }
+    .box-img{
+        height: 100px;
+    }
+    .booknow{
+        height: 20px;
+        width: 60px;
+        font-size: 0.4rem;
+        font-weight: 600; 
+    }
+    /*footer-----------------*/
+    .foot-panel1{
+        height: 35px;
+        font-size: 1rem;    
+    }
+    .foot-panel2{
+        height: 170px;
+    }
+    .foot-panel2 ul h3{
+        font-size: 0.8rem;
+    }
+    .foot-panel2 ul a{
+        font-size: 0.6rem;
+    }
+    .foot-panel3{
+        height: 40px;
+    }
+    .panel-logo{
+       height:30px;
+        width:150px;
+    }
+    .foot-panel4{
+        height: 15px;
+        font-size: 0.6rem;
+        padding-bottom: 15px;
+    }
+    /* welcome card----------------*/
+    .welcome{
+        height: 280px;
+    }
+    .welcome-image img{
+        height: 200px;
+        width: 210px;
+    }
+    .welcome-image img:hover{
+        height: 210px;
+        width: 220px;
+    }
+    
+    .wecome-card{
+        height: 220px;
+        width: 50%;
+        font-size: 0.4rem;
+    }
+    .wecome-card p{
+        font-size: 0.7rem;
+    }
+    .wecome-card h2{
+        font-size: 0.9rem;
+    }
+    .wecome-card h3{
+        font-size: 0.6rem;
+    
+    }
+    .menu{
+        height: 430px;
+    }
+    .menuimg img{
+        height: 360px;
+        width: 220px;
+    }
+    .menuimg img:hover{
+        height: 370px;
+        width: 230px;
+    }
+    .menu-heading{
+        font-size: 0.9rem;
+        height: 35px;
+    }
+    .menu-heading i{
+        font-size: 1rem;
+    }
+    
+    
+    /*Slider------------------*/
+    /* Slideshow container */
+    .slider-heading{
+        height: 35px;
+    }
+    .slider-heading h2{
+
+        font-size: 1.2rem;
+    
+    }
+    
+      /* Caption text */
+      .text {
+        font-size: 1rem;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        font-size: 8px;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 10px;
+        width: 10px;
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 8px}
+      }
+      .slider{
+        height: 230px; 
+      }
+      .mySlides img{
+        height: 140px;
+        width: 110px;
+      }
+      .slider-images{
+        height: 200px;
+    
+      }
+      .slider-images .discount {
+        width: 450px;
+      }
+    
+    
+    /* conatct container-------------------- */
+    .contact-container{
+        height: 400px;  
+    }
+    .contact-content{
+        height: 380px;
+    }
+    .get{
+        height:270px ;
+    }
+    .i1{
+        font-size: 1rem;
+    }
+    .i1 h3{
+        font-size: 0.6rem;
+        padding: 5px 0;
+    
+    }
+    .contact{
+        height:270px ;
+    }
+    .get h1{
+        font-size: 1.2rem;
+    }
+    .get p{
+        font-size: 0.7rem;
+    }
+    .contact h1{
+        font-size: 1.2rem;
+    
+    }
+
+    .input1 input{
+        font-size: 0.6rem;
+        padding: 5px;
+        width: 60px;
+    }
+    .input1 textarea{
+        font-size: 0.8rem;
+        height: 6px;
+        width: 80px;
+    }
+    
+    
+    /* About us---------------------------- */
+    .about{
+        height:990px ;
+    }
+    .aboutimg img{
+        height: 220px;
+        width: 230px;
+    }
+    .aboutp{
+        height: 180px;    
+    }
+    .aboutp p{
+        font-size: 1.1rem;   
+    }
+    .about1{
+    
+        height: 280px;
+    }
+    .about-heading{
+        height: 40px;
+        font-size: 2rem;
+
+    }
+    .aboutp h1{
+        height: 40px;
+        font-size: 1.7rem;
+    }
+    
+    /* menu-html */
+    .sectionfood{
+        height: 30px; 
+    }
+    .sectionfood h1{
+        font-size: 1.4rem;
+    }
+
+    .foodi{
+        height: 400px;
+    }
+    .divfood1{
+        height: 290px;
+  
+    }
+    .divfood2{
+        height: 290px;
+    }
+    .food{
+        height: 120px;
+        width: 20%;
+    }
+    .food:hover{
+        height: 130px;
+        width: 22%;
+        
+    }
+    .food-img{
+        height: 100px;
+    } 
+    .oo{
+        font-size: 0.8rem;
+    } 
+
+}
+
+
+/* media------------------------- */
+@media screen and (max-width: 500px){
+    
+    .navbar{
+        height:40px;
+    }
+    .nav-logo{
+        height:20px;
+        width: 50px;
+        
+    }
+    .logo{
+        height:20px;
+        width:70px;  
+    }
+    .search{
+        width: 250px;
+        height: 25px;
+    }
+    .search-input{
+        width: 100%;
+        font-size:0.7rem;
+    }
+    .search-icon{
+        width: 25px;
+        font-size: 0.7rem;
+    }
+    .list{
+        width: 90%; 
+    }
+    .list li a:hover{
+        font: 1rem;
+    }
+    .list li a{
+        font-size: 0.7rem;
+    }
+    .order{
+        height: 25px;
+        width: 80px;
+        font-size: 0.5rem;
+    }
+    .signup{
+        
+        font-size: 7px;
+        width: 90px;
+        
+    }
+
+    /* hero section ***********************/
+    
+    .herosection{
+        height: 220px;
+
+    }
+    .taste{
+        height: 150px;
+        width: 80px;
+        margin-left: 200px;
+    }
+    
+    .herosection h1{
+        font-size: 1.3rem;
+        width: 150px;
+
+    }
+    .herosection h2{
+        font-size:1rem;
+        
+        width: 180px;
+        
+    }
+    .heromessage{
+        height: 25px;
+        font-size: 0.5rem;
+    }
+    .nav-list {
+        height: 25px;
+        top: 40px; /* Adjust the top position as needed */
+        width: 100%;
+
+    }
+    
+    /*location.....................*/
+    .section2{
+        height: 25px;   
+    }
+    .section2 h1{
+        font-size: 1.3rem;
+    }
+    .location{
+        height: 1500px;
+        flex-direction: column;
+    }
+    .box{
+        height: 300px;
+        width: 85%;
+  
+    }
+    .box-content h2{
+        font-size: 1.3rem;
+    }
+    .box:hover{
+        height: 310px;
+        width: 90%;
+        
+    }
+    .box-img{
+        height: 250px;
+    }
+    .booknow{
+        height: 20px;
+        width: 80px;
+        font-size: 0.8rem;
+        font-weight: 600; 
+    }
+    /*footer-----------------*/
+    .foot-panel1{
+        height: 30px;
+        font-size: 0.9rem;    
+    }
+    .foot-panel2{
+        height: 200px;
+    }
+    .foot-panel2 ul h3{
+        font-size: 0.7rem;
+    }
+    .foot-panel2 ul a{
+        font-size: 0.5rem;
+    }
+    .foot-panel3{
+        height: 40px;
+    }
+    .panel-logo{
+       height:25px;
+        width:120px;
+    }
+    .foot-panel4{
+        height: 15px;
+        font-size: 0.6rem;
+        padding-bottom: 15px;
+    }
+    /* welcome card----------------*/
+    .welcome{
+        height: 490px;
+        flex-direction: column;
+    }
+    .welcome-image img{
+        height: 200px;
+        width: 310px;
+    }
+    .welcome-image img:hover{
+        height: 210px;
+        width: 320px;
+    }
+    
+    .wecome-card{
+        height: 190px;
+        width: 280px;
+        font-size: 0.6rem;
+        margin-left: 0px;
+    }
+    .wecome-card p{
+        font-size: 0.8rem;
+    }
+    .wecome-card h2{
+        font-size: 1.2rem;
+    }
+    .wecome-card h3{
+        font-size: 0.8rem;
+    
+    }
+    .menu{
+        height: 750px;
+        flex-direction: column;
+    }
+    .menuimg img{
+        height: 330px;
+        width: 260px;
+    }
+    .menuimg img:hover{
+        height: 340px;
+        width: 270px;
+    }
+    .menu-heading{
+        font-size: 0.9rem;
+        height: 35px;
+    }
+    .menu-heading i{
+        font-size: 1rem;
+    }
+    
+    
+    /*Slider------------------*/
+    /* Slideshow container */
+    .slider-heading{
+        height: 35px;
+    }
+    .slider-heading h2{
+
+        font-size: 1.2rem;
+    
+    }
+    
+      /* Caption text */
+      .text {
+        font-size: 1rem;
+        width: 300px;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        font-size: 8px;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 10px;
+        width: 10px;
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 8px;
+    
+    }
+      }
+      .slider{
+        height: 230px; 
+      }
+      .mySlides img{
+        height: 120px;
+        width: 90px;
+      }
+      .slider-images{
+        height: 180px;
+    
+      }
+      .slider-images .discount {
+        width: 300px;
+      }
+    
+    
+    /* conatct container-------------------- */
+    .contact-container{
+        height: 600px;  
+    }
+    .contact-content{
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .get{
+        height:260px ;
+        width: 100%;
+    }
+    .i1{
+        font-size: 1.2rem;
+    }
+    .i1 h3{
+        font-size: 0.6rem;
+        padding: 5px 0;
+    
+    }
+    .contact{
+        height:260px ;
+        width: 100%;
+    }
+    .get h1{
+        font-size: 1.4rem;
+    }
+    .get p{
+        font-size: 0.8rem;
+    }
+    .contact h1{
+        font-size: 1.4rem;
+    
+    }
+
+    .input1 input{
+        
+        font-size: 0.8rem;
+        padding: 8px;
+        width: 90px;
+    }
+    .input1 textarea{
+        font-size: 0.8rem;
+        height: 2px;
+        width: 200px;
+    }
+    
+    
+    /* About us---------------------------- */
+    .about{
+        height:700px ;
+    }
+    .aboutimg img{
+        height: 150px;
+        width: 150px;
+    }
+    .aboutp{
+        height: 180px;    
+    }
+    .aboutp p{
+        font-size: 0.7rem;   
+    }
+    .about1{
+    
+        height: 200px;
+    }
+    .about-heading{
+        height: 30px;
+        font-size: 1.8rem;
+
+    }
+    .list{
+    width: 70px;
+    padding-left: 2px;
+    }
+    .aboutp h1{
+        height: 30px;
+        font-size: 1.3rem;
+    }
+    
+    /* menu-html */
+    .sectionfood{
+        height: 80px; 
+    }
+    .sectionfood h1{
+        font-size: 1.6rem;
+    }
+
+    .foodi{
+        height: 3100px;
+       
+    }
+    .divfood1{
+        height: 1500px;
+        flex-direction: column;
+  
+    }
+    .divfood2{
+        padding-top: 50px;
+        height: 1500px;
+        flex-direction: column;
+    }
+    .food{
+        height: 420px;
+        width: 85%;
+    }
+    .food:hover{
+        height: 430px;
+        width: 90%;
+        
+    }
+    .food-img{
+        height: 300px;
+        
+    } 
+    .oo{
+        font-size: 1.2rem;
+    } 
+
+}
