@@ -1,6 +1,9 @@
-# Online-Food-Order-Website
-This is a responsive online food order website.
-![Screenshot 2023-06-22 181301](https://github.com/Yash9891/Online-Food-Order-Website/assets/122812129/8efc46f7-a57a-4fa5-b59c-7c62f3c4de9b)
-![Screenshot 2023-06-22 182027](https://github.com/Yash9891/Online-Food-Order-Website/assets/122812129/bd747a38-236c-44ac-9fe1-c0b4fc8c295e)
-![Screenshot 2023-06-22 181424](https://github.com/Yash9891/Online-Food-Order-Website/assets/122812129/94419b60-b0cf-4d92-bc25-e219911cc49f)
- 
+# Virtual Taste - Feel the taste online!
+This is an online restaurant website named "Virtual Taste." I created this website entirely by myself. It functions as a front-end website for an online restaurant. I utilized HTML, CSS and JavaScript to develop the Virtual Taste website.
+
+ ![Screenshot 2023-10-15 215240](https://github.com/Yash9891/VirtualTaste/assets/122812129/59e7f2f4-df38-4de2-bf43-ca63ad0347f4)
+ ![Screenshot 2023-10-15 215309](https://github.com/Yash9891/VirtualTaste/assets/122812129/4de0722b-ce31-4e46-ae22-ebf0fb4f1e30)
+![Screenshot 2023-10-15 215359](https://github.com/Yash9891/VirtualTaste/assets/122812129/8cef4dea-9c7e-45d8-9480-58b4115aeea0)
+![Screenshot 2023-10-15 215431](https://github.com/Yash9891/VirtualTaste/assets/122812129/6f25379a-5f96-48b4-bfb1-515e2b8c972f)
+
+
